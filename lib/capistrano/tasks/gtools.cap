@@ -1,0 +1,13 @@
+namespace :gtools do
+  desc <<-DESC
+    Set cached copy's remote URL to the actual :repo_url
+    Useful after moving git repository
+  DESC
+  task :update_repo_url do
+    on roles(:all) do
+      within repo_path do
+        execute :git, 'remote', 'set-url', 'origin', fetch(:repo_url)
+      end
+    end
+  end
+end
