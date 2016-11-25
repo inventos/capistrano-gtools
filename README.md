@@ -1,6 +1,6 @@
 # Capistrano Git Tools
 
-Adds a `gtools:update_remote_url` task which updates remote's URL to the actual one.
+Adds a `gtools:update_remote_url` task which updates remote's URL on your servers to the actual one.
 
 ## Install
 
@@ -16,7 +16,7 @@ Add to your deployment script:
 
 After updating :repo_url in your `config/deploy.rb`, run:
 
-    cap git:update_repo_url
+    cap gtools:update_repo_url
 
 ## License
 
