@@ -1,6 +1,6 @@
 # Capistrano Git Tools
 
-Adds a `gtools:update_remote_url` task which updates remote's URL on your servers to the actual one.
+Adds a `gtools:update_repo_url` task which updates remote's URL on your servers to the actual one.
 
 ## Install
 
@@ -8,9 +8,9 @@ Add to your Gemfile:
 
     gem 'capistrano-gtools', require: false
 
-Add to your deployment script:
+Add to your `deploy.rb` script:
 
-    gem 'capistrano-gtools', require: false
+    require 'capistrano/gtools'
 
 ## Usage
 
